@@ -12,11 +12,11 @@ $(document).ready(function() {
     event.preventDefault();
     var userNumber = $("input#numberInput").val(); {
 
-      if (userNumber == 0) {
+      if (userNumber.includes(1)) {
         $("#beepPhrase").append("Boop!" + " ");
-    } else if (userNumber == 1) {
+    } else if (userNumber.includes(0)) {
         $("#beepPhrase").append("Beep!" + " ");
-      } else if (userNumber > 2) {
+      } else if (userNumber > 1) {
         $("#beepPhrase").append(userNumber + " ");
       }
     }
