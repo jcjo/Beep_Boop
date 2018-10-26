@@ -1,5 +1,5 @@
 //
-// //Completion with If/else
+// //If/Else meets all conditions
 //
 // $(document).ready(function() {
 //   $("form#beepForm").submit(function(event) {
@@ -20,11 +20,12 @@
 //   });
 // });
 
-//Working Loop with no result display
+//Working Loop with only Beep and Boop conditions
 //
 $(document).ready(function() {
   $("form#beepForm").submit(function(event) {
     event.preventDefault();
+    $("#responseString").fadeIn();
 
     var userNumber = $("input#numberInput").val();
     var splitString = userNumber.split("");
@@ -36,8 +37,8 @@ $(document).ready(function() {
     var boop = ["Boop"];
     var sorryDave = ["I'm sorry, Dave. I'm afraid I can't do that."];
 
-    for (var i = 0; i <= splitString.length-1; i ++) {
-      if (splitString[i] ===one[i]) {
+    for (var i = 0; i <= splitString.length-1; i++) {
+      if (splitString[i] === one[i]) {
         resultArray.push(boop[i]);
       } else if (splitString[i] === zero[i]) {
         resultArray.push(beep[i]);
