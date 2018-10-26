@@ -27,7 +27,7 @@ $(document).ready(function() {
     var splitString = userNumber.split("");
     var zero = ["0"];
 
-    for (var i = 0; i <= splitString.length; i ++) {
+    for (var i = 0; i <= splitString.length-1; i ++) {
       if (splitString[i] === zero[i]) {
        alert ("you did it!");
      } else if (splitString[i] != zero[i]) {
