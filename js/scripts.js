@@ -25,9 +25,14 @@ $(document).ready(function() {
     $("responseString").fadeIn();
     var userNumber = $("input#numberInput").val();
     var splitString = userNumber.split("");
-    console.log(splitString);
-    var one = ["1"];
+    var zero = ["0"];
 
-
+    for (var i = 0; i <= splitString.length; i ++) {
+      if (splitString[i] === zero[i]) {
+       alert ("you did it!");
+     } else if (splitString[i] != zero[i]) {
+       alert ("You still did it!");
+     }
+    }
   });
 });
