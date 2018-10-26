@@ -4,4 +4,20 @@
 
 .btn-primary {
   margin: 10px;
+  background-color: #2B0F53;
+  color: #F1D9F7;
+  font-family: 'Crafty Girls', cursive;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: #F1D9F7;
+  color: #2B0F53;
+}
+
+h1 {
+  font-family: 'Crafty Girls', cursive;
+}
+h3 {
+  font-family: 'Crafty Girls', cursive;
 }
