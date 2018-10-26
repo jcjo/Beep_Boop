@@ -6,7 +6,7 @@ $(document).ready(function() {
   $("form#beepForm").submit(function(event) {
     var userNumber = $("input#numberInput").val();
     event.preventDefault();
-    $("#beepPhrase").text(userNumber);
+    $("#beepPhrase").append(userNumber + " ");
     //
     // if (userNumber === "1") {
     //   $("#responseString").push(userNumber);
