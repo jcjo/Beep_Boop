@@ -20,25 +20,39 @@
 //   });
 // });
 
+//
+// $(document).ready(function() {
+//   $("form#beepForm").submit(function(event) {
+//     event.preventDefault();
+//     function boopify (userNumber) {
+//     var userNumber = $("input#numberInput").val();
+//     var userNumberArray = userNumber.split(" ");
+//
+//     for (var i = 0; i <= userNumber.length; i ++) {
+//       if (userNumberArray[i] === 0) {
+//         $("#beepPhrase").append("Beep!");
+//       } else if (userNumberArray[i] != 0) {
+//          $("#beepPhrase").append(userNumberArray);
+//         }
+//       }
+//     // } return "#beepPhrase";
+//     }
+//   })
+// });
+
 
 $(document).ready(function() {
-  $("form#beepForm").submit(function(event) {
+  $("form.beepForm").submit(function(event) {
     event.preventDefault();
-    function boopify (userNumber) {
-    var userNumber = $("input#numberInput").val();
-    var userNumberArray = userNumber.split(" ");
-
-    for (var i = 0; i <= userNumber.length; i ++) {
-      if (userNumberArray[i] === 0) {
+    userNumberArray.forEach(function(userNumberArray) {
+      var beepNumbers = [0];
+      var userNumber = $("input#numberInput").val();
+      var userNumberArray = userNumber.split(" ");
+      if (userNumberArray[i] === beepNumbers) {
         $("#beepPhrase").append("Beep!");
-      } else if (userNumberArray[i] != 0) {
+      } else if (userNumberArray[i] != beepNumbers) {
          $("#beepPhrase").append(userNumberArray);
         }
-      }
-    // } return "#beepPhrase";
-    }
+      })
   })
 });
-
-
-$(document).read(function())
