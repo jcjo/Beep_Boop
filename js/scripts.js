@@ -25,7 +25,7 @@
 $(document).ready(function() {
   $("form#beepForm").submit(function(event) {
     event.preventDefault();
-    $("responseString").fadeIn();
+
     var userNumber = $("input#numberInput").val();
     var splitString = userNumber.split("");
     var zero = ["0"];
@@ -39,15 +39,10 @@ $(document).ready(function() {
     for (var i = 0; i <= splitString.length-1; i ++) {
       if (splitString[i] ===one[i]) {
         resultArray.push(boop[i]);
-        // return ResultArray;
-        // console.log(resultArray);
       } else if (splitString[i] === zero[i]) {
         resultArray.push(beep[i]);
-        // console.log(resultArray);
       }
     }
-    return resultArray;
-    console.log(resultArray);
-    // $("#beepPhrase").append(resultArray);
+    $("#beepPhrase").append(resultArray + " ");
   });
 });
