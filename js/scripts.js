@@ -12,9 +12,7 @@ $(document).ready(function() {
     event.preventDefault();
     var userNumber = $("input#numberInput").val(); {
 
-      if () {
-        alert ("Please enter a number!");
-      } else if (userNumber % 3 == 0) {
+      if (userNumber % 3 == 0) {
         $("#beepPhrase").append("I'm sorry, Dave. I'm afraid I can't do that. ");
       } else if (userNumber.includes(1)) {
         $("#beepPhrase").append("Boop!" + " ");
