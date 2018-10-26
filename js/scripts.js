@@ -12,11 +12,15 @@ $(document).ready(function() {
     event.preventDefault();
     var userNumber = $("input#numberInput").val(); {
 
-      if (userNumber.includes(1)) {
+      if () {
+        alert ("Please enter a number!");
+      } else if (userNumber % 3 == 0) {
+        $("#beepPhrase").append("I'm sorry, Dave. I'm afraid I can't do that. ");
+      } else if (userNumber.includes(1)) {
         $("#beepPhrase").append("Boop!" + " ");
-    } else if (userNumber.includes(0)) {
+      } else if (userNumber.includes(0)) {
         $("#beepPhrase").append("Beep!" + " ");
-      } else if (userNumber > 1) {
+      } else if (userNumber >= 2) {
         $("#beepPhrase").append(userNumber + " ");
       }
     }
