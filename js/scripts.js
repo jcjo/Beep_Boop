@@ -1,4 +1,4 @@
-//
+// //
 // $(document).ready(function() {
 //   $("form#beepForm").submit(function(event) {
 //     var userNumber = $("input#numberInput").val();
@@ -7,18 +7,19 @@
 //   });
 // });
 
-// $(document).ready(function() {
-//   $("form#beepForm").submit(function(event) {
-//     event.preventDefault();
-//     var userNumber = $("input#numberInput").val();
-//
-//     if (userNumber === 1) {
-//       $("#beepPhrase").append(userNumber + "!");
-//     } else if (userNumber != 1) {
-//         $("#beepPhrase").append(userNumber + " ");
-//       }
-//   });
-// });
+$(document).ready(function() {
+  $("form#beepForm").submit(function(event) {
+    event.preventDefault();
+    var userNumber = $("input#numberInput").val(); {
+
+      if (userNumber <= 0) {
+        $("#beepPhrase").append("Boop!" + " ");
+    } else if (userNumber != 1) {
+        $("#beepPhrase").append(userNumber + " ");
+      }
+    }
+  });
+});
 
 //
 // $(document).ready(function() {
@@ -39,20 +40,20 @@
 //     }
 //   })
 // });
-
-
-$(document).ready(function() {
-  $("form.beepForm").submit(function(event) {
-    event.preventDefault();
-    userNumberArray.forEach(function(userNumberArray) {
-      var beepNumbers = [0];
-      var userNumber = $("input#numberInput").val();
-      var userNumberArray = userNumber.split(" ");
-      if (userNumberArray[i] === beepNumbers) {
-        $("#beepPhrase").append("Beep!");
-      } else if (userNumberArray[i] != beepNumbers) {
-         $("#beepPhrase").append(userNumberArray);
-        }
-      })
-  })
-});
+// $(document).ready(function() {
+//   $("form.beepForm").submit(function(event) {
+//     event.preventDefault();
+//
+//     var beepNumbers = [0];
+//     var userNumber = $("input#numberInput").val();
+//     var userNumberArrays = userNumber.split();
+//
+//     userNumberArrays.forEach(function(userNumberArray) {
+//       if (userNumberArray[i] === beepNumbers[i]) {
+//         alert ("I love this");
+//       } else if (userNumberArray[i] != beepNumbers[i]) {
+//          $("#beepPhrase").append(userNumberArray);
+//         }
+//       }) return ("BeepPhrase");
+//   });
+// });
