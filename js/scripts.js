@@ -1,5 +1,6 @@
 //
-// //UI Logic
+// //Completion with If/else
+//
 // $(document).ready(function() {
 //   $("form#beepForm").submit(function(event) {
 //     event.preventDefault();
@@ -19,6 +20,8 @@
 //   });
 // });
 
+//Working Loop with no result display
+//
 $(document).ready(function() {
   $("form#beepForm").submit(function(event) {
     event.preventDefault();
@@ -28,12 +31,20 @@ $(document).ready(function() {
     var zero = ["0"];
     var beep = ["Beep"];
     var resultArray = [];
+    var one = ["1"];
+    var boop = ["Boop"];
+    var sorryDave = ["I'm sorry, Dave. I'm afraid I can't do that."];
 
     for (var i = 0; i <= splitString.length-1; i ++) {
-      if (splitString[i] === zero[i]) {
-       resultArray.push(beep[i]);
+      if (splitString[i] ===one[i]) {
+        resultArray.push(boop[i]);
+        console.log(resultArray);
+      } else if (splitString[i] === zero[i]) {
+        resultArray.push(beep[i]);
+        console.log(resultArray);
       }
-    } return resultArray;
-      $("#beepPhrase").text(resultArray + " ");
+    }
+    return resultArray;
+    $("#beepPhrase").append(resultArray);
   });
 });
