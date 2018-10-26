@@ -26,13 +26,14 @@ $(document).ready(function() {
     var userNumber = $("input#numberInput").val();
     var splitString = userNumber.split("");
     var zero = ["0"];
+    var beep = ["Beep"];
+    var resultArray = [];
 
     for (var i = 0; i <= splitString.length-1; i ++) {
       if (splitString[i] === zero[i]) {
-       alert ("you did it!");
-     } else if (splitString[i] != zero[i]) {
-       alert ("You still did it!");
-     }
-    }
+       resultArray.push(beep[i]);
+      }
+    } return resultArray;
+      $("#beepPhrase").text(resultArray + " ");
   });
 });
