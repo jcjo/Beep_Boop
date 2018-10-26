@@ -10,6 +10,7 @@
 $(document).ready(function() {
   $("form#beepForm").submit(function(event) {
     event.preventDefault();
+    $("#responseString").show();
     var userNumber = $("input#numberInput").val(); {
 
       if (userNumber % 3 == 0) {
