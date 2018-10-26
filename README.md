@@ -8,6 +8,8 @@
 
 A website created with HTML, CSS, Javascript and JQuery that will return specific phrases such as "Beep" or "Boop" based on the numeric value the user will input into the generator.
 
+{link to github: https://github.com/jcjo/Beep_Boop}
+
 
 ### Specs
 | Spec | Input | Output |

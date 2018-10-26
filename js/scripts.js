@@ -30,6 +30,7 @@ $(document).ready(function() {
     var splitString = userNumber.split("");
     var zero = ["0"];
     var beep = ["Beep"];
+    var three = ["3"];
     var resultArray = [];
     var one = ["1"];
     var boop = ["Boop"];
@@ -38,13 +39,15 @@ $(document).ready(function() {
     for (var i = 0; i <= splitString.length-1; i ++) {
       if (splitString[i] ===one[i]) {
         resultArray.push(boop[i]);
-        console.log(resultArray);
+        // return ResultArray;
+        // console.log(resultArray);
       } else if (splitString[i] === zero[i]) {
         resultArray.push(beep[i]);
-        console.log(resultArray);
+        // console.log(resultArray);
       }
     }
     return resultArray;
-    $("#beepPhrase").append(resultArray);
+    console.log(resultArray);
+    // $("#beepPhrase").append(resultArray);
   });
 });
