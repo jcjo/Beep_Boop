@@ -14,9 +14,8 @@ A website created with HTML, CSS, Javascript and JQuery that will return specifi
 | :-------------     | :------------- | :------------- |
 | **Program Gathers User Input** | User input: "205" | Output: "205" |
 | **Expect numbers that contain a zero to output "Beep"**| User Input: "205" | Output: "Beep" |
-| **Expect numbers that contain a one to output "Boop"**| Input: "p#an^t@s  /p(ant%s" | Output: "pantspants" |
-| **Program Assigns Characters Numeric Values** | Input: "pants" | Output: "3 1 1 1 1" |
-| **Program Sums Character Values**| Input: "3 1 1 1 1" | Page Displays: 7 |
+| **Expect numbers that contain a one to output "Boop"**| Input: "105" | Output: "Boop" |
+| **Expect numbers that are divisible by three to ouput "I'm sorry, Dave. I'm afraid I can't do that." ** | Input: "6" | Output: "I'm sorry, Dave. I'm afraid I can't do that." |
 
 ## Setup/Installation Requirements
 
